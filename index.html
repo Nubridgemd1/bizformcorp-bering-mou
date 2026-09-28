@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BizformCorp / The Bering Group MoU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap">
+<style>
+  @page{ size:Letter; margin:0.8in 0.85in 0.75in; }
+  *{ box-sizing:border-box; }
+  body{ font-family:Georgia,"Times New Roman",serif; color:#16181c; font-size:10.8pt; line-height:1.45; margin:0; -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  .page{ max-width:7in; margin:0 auto; }
+  h1{ font-size:19pt; text-align:center; margin:6px 0 2px; letter-spacing:.01em; }
+  .sub{ text-align:center; font-style:italic; color:#3a4657; font-size:11pt; margin:0 0 6px; }
+  .gold{ border:0; border-top:2px solid #b08d2f; margin:10px 0 16px; }
+  h2{ font-size:12pt; color:#16324f; margin:18px 0 7px; }
+  p{ margin:7px 0; text-align:justify; }
+  ol{ margin:6px 0; padding-left:22px; } ol li{ margin:5px 0; text-align:justify; }
+  .defterm{ font-weight:bold; }
+  table{ border-collapse:collapse; width:100%; font-size:10pt; margin:10px 0; }
+  th,td{ border:1px solid #c9d3dd; padding:7px 9px; text-align:left; vertical-align:top; overflow-wrap:break-word; word-break:break-word; }
+  th{ background:#16324f; color:#fff; font-size:9.5pt; letter-spacing:.03em; }
+  .parties td:first-child{ font-weight:bold; width:26%; }
+  .foot{ text-align:center; font-size:8pt; color:#7a828c; border-top:1px solid #ddd; margin-top:22px; padding-top:6px; }
+  .sig td{ vertical-align:bottom; }
+  .sig .lab{ font-weight:bold; width:16%; }
+  .sigslot{ min-height:42px; display:flex; align-items:flex-end; }
+  .sigslot .typed{ font-family:'Dancing Script',cursive; font-size:23pt; color:#0a2a52; line-height:1; }
+  .sigslot .ph{ color:#9aa6b2; font-style:italic; font-size:9pt; }
+  .filledline{ border-bottom:1px solid #333; min-height:1.3em; padding:2px 2px; }
+  .note{ font-size:9pt; color:#555; font-style:italic; }
+  ul.sch{ margin:6px 0; padding-left:20px; } ul.sch li{ margin:4px 0; }
+
+  .esign-bar{ background:#16324f; color:#fff; border-radius:10px; padding:14px 18px; margin:0 0 14px; font-family:Arial,sans-serif; }
+  .esign-bar h3{ margin:0 0 4px; font-size:13pt; } .esign-bar p{ margin:3px 0; color:#d6e2ef; font-size:10pt; text-align:left; }
+  .esign-bar .how{ display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; } .esign-bar .how div{ flex:1 1 150px; background:rgba(255,255,255,.08); border-radius:7px; padding:8px 11px; font-size:9.5pt; } .esign-bar .how b{ color:#e9c877; }
+  .status{ display:flex; align-items:center; gap:10px; margin-top:10px; flex-wrap:wrap; }
+  .status .pill{ font-size:9.5pt; font-weight:bold; padding:4px 12px; border-radius:999px; background:#e9c877; color:#3a2b06; }
+  .btn{ font-family:Arial,sans-serif; font-size:10pt; font-weight:bold; border:0; border-radius:7px; padding:9px 16px; cursor:pointer; -webkit-appearance:none; appearance:none; touch-action:manipulation; }
+  .btn.pri{ background:#e9c877; color:#3a2b06; } .btn.pri:disabled{ background:#6b7683; color:#c8ced6; cursor:not-allowed; } .btn.ghost{ background:transparent; color:#fff; border:1px solid #7f93a8; }
+  .badge{ display:inline-flex; gap:6px; background:#eef8f2; color:#145c3f; border:1px solid #1c7a54; border-radius:999px; padding:4px 12px; font-size:9pt; font-weight:bold; margin-top:8px; font-family:Arial,sans-serif; }
+  .esc{ margin-top:14px; border:1px solid #c9d3dd; border-radius:9px; padding:13px 15px; background:#fafcff; font-family:Arial,sans-serif; }
+  .esc .row{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:8px; } .esc .f{ flex:1 1 45%; min-width:130px; }
+  .esc label{ display:block; font-size:8.5pt; font-weight:bold; color:#16324f; text-transform:uppercase; letter-spacing:.03em; margin-bottom:3px; }
+  .esc input[type=text],.esc input[type=email]{ width:100%; font-family:Arial,sans-serif; font-size:10.5pt; padding:8px 9px; border:1px solid #b9c6d3; border-radius:6px; -webkit-appearance:none; appearance:none; background:#fff; color:#16181c; }
+  .tabs{ display:flex; gap:6px; margin-bottom:8px; } .tabs button{ font-family:Arial,sans-serif; font-size:9pt; font-weight:bold; border:1px solid #b9c6d3; background:#eef3f8; color:#16324f; border-radius:6px 6px 0 0; padding:6px 12px; cursor:pointer; -webkit-appearance:none; appearance:none; touch-action:manipulation; } .tabs button.on{ background:#16324f; color:#fff; border-color:#16324f; }
+  .pane{ display:none; } .pane.on{ display:block; }
+  .tp{ font-family:'Dancing Script',cursive; font-size:26pt; color:#0a2a52; min-height:46px; border-bottom:1px dashed #b9c6d3; padding:2px 4px; }
+  canvas.draw{ width:100%; height:110px; border:1px dashed #b9c6d3; border-radius:6px; background:#fff; touch-action:none; display:block; }
+  .consent{ display:flex; gap:8px; align-items:flex-start; margin:9px 0; font-size:9pt; color:#37424e; } .consent input{ margin-top:2px; }
+  .mini{ font-size:8.5pt; color:#6a7684; margin-top:4px; font-family:Arial,sans-serif; }
+  .audit{ border:1.5px solid #16324f; border-radius:9px; padding:12px 15px; margin-top:20px; font-family:Arial,sans-serif; page-break-inside:avoid; }
+  .audit h3{ margin:0 0 6px; color:#16324f; } .audit table{ margin:0; } .audit td,.audit th{ font-size:9pt; }
+  .fp{ font-family:Consolas,monospace; font-size:8.3pt; color:#16324f; word-break:break-all; }
+  .sigslot img{ max-height:42px; }
+
+  /* --- Phones / small screens (esp. iPhone) --- */
+  @media screen and (max-width:640px){
+    body{ font-size:11.4pt; }
+    .page{ padding:0 15px; }
+    h1{ font-size:16pt; } .sub{ font-size:10.5pt; }
+    h2{ font-size:11.5pt; margin:16px 0 6px; }
+    p, ol li{ text-align:left; }               /* avoid gappy justification on narrow screens */
+    table{ font-size:10pt; table-layout:fixed; }   /* respect 100% width, don't stretch the page */
+    th,td{ padding:6px 7px; }
+    .parties td:first-child{ width:34%; }
+    .sig .lab{ width:24%; }
+    .esign-bar{ padding:13px 14px; }
+    .esign-bar .how div{ flex:1 1 100%; }
+    .status .btn{ flex:1 1 100%; }             /* full-width tap targets */
+    .esc{ padding:13px 13px; }
+    .esc .f{ flex:1 1 100%; min-width:0; }      /* stack name/title/email */
+    /* 16px inputs prevent iOS Safari from zooming the page on focus */
+    .esc input[type=text], .esc input[type=email], #btyped{ font-size:16px; padding:11px 11px; }
+    .tabs{ flex-wrap:wrap; }
+    .tabs button{ flex:1 1 auto; }
+    .btn{ padding:12px 16px; }
+    canvas.draw{ height:130px; }
+  }
+
+  @media print{ .esign-bar,.esc,.badge,.no-print{ display:none !important; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="esign-bar no-print">
+    <h3>Electronic Signature — Memorandum of Understanding</h3>
+    <p>BizformCorp LLC has executed this MOU (Odemero Uwanogho, Director, September 28, 2026). Bering Group signs below to complete it.</p>
+    <div class="how"><div><b>1 &middot; Review</b> the MOU above.</div><div><b>2 &middot; Complete</b> Bering&rsquo;s name, title and email.</div><div><b>3 &middot; Sign</b> by typing or drawing, tick consent, press <b>Sign</b>.</div><div><b>4 &middot; Download</b> the executed copy.</div></div>
+    <div class="status"><span class="pill" id="statusPill">1 of 2 parties signed</span><button class="btn pri" id="downloadBtn" disabled>Download / Print executed copy</button><button class="btn ghost" id="resetBtn">Reset</button></div>
+    <p class="mini" id="savedNote" style="margin-top:8px"></p>
+  </div>
+  <h1>MEMORANDUM OF UNDERSTANDING</h1>
+  <div class="sub">BizformCorp / The Bering Group</div>
+  <hr class="gold">
+
+  <h2>1. Parties and Effective Date</h2>
+  <p>This Memorandum of Understanding (&ldquo;<span class="defterm">MOU</span>&rdquo;) is made as of <b>September 28, 2026</b> (the &ldquo;<span class="defterm">Effective Date</span>&rdquo;) between BizformCorp LLC and Bering Group.</p>
+  <table class="parties">
+    <thead><tr><th>PARTY</th><th>ENTITY DETAILS</th><th>NOTICE CONTACT</th></tr></thead>
+    <tbody>
+      <tr><td>BizformCorp LLC (&ldquo;BizformCorp&rdquo;)</td><td>A Texas limited liability company, 8707 Timber Knoll Drive, Missouri City, TX 77459, United States</td><td>Odemero Uwanogho, Director<br>admin@bizformcorp.com</td></tr>
+      <tr><td>Bering Group (&ldquo;Bering&rdquo;)</td><td>Houston, TX, United States</td><td><span style="display:block;border-bottom:1px solid #333;min-height:1.2em;max-width:100%"></span>[name, title, email]</td></tr>
+    </tbody>
+  </table>
+  <p>Each is a &ldquo;<span class="defterm">Party</span>&rdquo;; together, the &ldquo;<span class="defterm">Parties</span>.&rdquo;</p>
+
+  <h2>2. Purpose</h2>
+  <p>BizformCorp will secure trading agreements with Shell Trading International (&ldquo;<span class="defterm">Shell</span>&rdquo;) for the benefit of Bering, and Bering will pay BizformCorp 30% of payments Bering receives on all trades secured by Bering&rsquo;s partners, retaining 70%.</p>
+  <p>This MOU records the Parties&rsquo; shared understanding of that arrangement and the terms on which they intend to proceed. Except for Sections 7 (Confidentiality and Non-Circumvention) and 8 (General Provisions), which the Parties intend to be legally binding, this MOU is a statement of intent and is to be superseded by a definitive written agreement.</p>
+
+  <h2>3. BizformCorp&rsquo;s Responsibilities</h2>
+  <ol>
+    <li>Introduce Bering to Shell and pursue, negotiate and secure trading agreements with Shell on terms acceptable to Bering.</li>
+    <li>Coordinate with Shell on documentation, know-your-customer requirements, product specifications and commercial terms, and pass Shell&rsquo;s requests and responses to Bering promptly.</li>
+    <li>Support Bering through onboarding, contract execution and the first trades under each agreement secured.</li>
+    <li>Keep Bering informed of the status of each prospect and of any change in Shell&rsquo;s requirements or willingness to transact.</li>
+    <li>Not hold itself out as an agent of Bering or of Shell, bind either to any obligation, negotiate price on Bering&rsquo;s behalf without written authority, or take title to or possession of any product.</li>
+    <li>Bear its own costs of performance, including travel, unless Bering approves a cost in writing in advance.</li>
+  </ol>
+
+  <h2>4. Bering&rsquo;s Responsibilities</h2>
+  <ol>
+    <li>Decide whether to accept any agreement or trade presented; nothing here obliges Bering to transact.</li>
+    <li>Execute and perform the trading agreements it accepts, and carry all trading, credit, delivery and performance risk on those trades.</li>
+    <li>Give BizformCorp the corporate, financial and compliance information Shell reasonably requires, and respond to Shell&rsquo;s requests promptly.</li>
+    <li>Identify in writing the partners whose trades fall within Section 5, and notify BizformCorp when a new partner is added.</li>
+    <li>Report and pay BizformCorp&rsquo;s share under Section 5, and not restructure a trade, route it through an affiliate, or novate it in order to reduce or avoid that share.</li>
+    <li>Not approach Shell about the opportunities BizformCorp introduces other than through BizformCorp during the term, except where Bering already had a documented relationship with Shell before the Effective Date.</li>
+  </ol>
+
+  <h2>5. Compensation — 70/30 Split</h2>
+  <p><b>Bering retains 70% and pays BizformCorp 30% of all Qualifying Payments.</b></p>
+  <table>
+    <thead><tr><th>TERM</th><th>MEANING</th></tr></thead>
+    <tbody>
+      <tr><td><b>Qualifying Payment</b></td><td>Every payment actually received by Bering, in cash or cleared funds, on or in connection with a Qualifying Trade, including price, premium, demurrage, quality adjustments, settlements and payments received after termination.</td></tr>
+      <tr><td><b>Qualifying Trade</b></td><td>Any trade secured by a partner of Bering under, or arising from, a trading agreement with Shell secured by BizformCorp under this MOU.</td></tr>
+      <tr><td><b>Bering&rsquo;s Partners</b></td><td>The persons and entities listed in Schedule A, as updated in writing by Bering.</td></tr>
+      <tr><td><b>Split</b></td><td>70% Bering / 30% BizformCorp of each Qualifying Payment.</td></tr>
+      <tr><td><b>Basis</b></td><td>Gross amount received. The split is calculated on gross receipts, with no deductions (Schedule B is not applicable unless the Parties later agree a net basis in writing).</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:10px"><b>Payment mechanics</b></p>
+  <ol>
+    <li>Bering pays BizformCorp its 30% share within ten (10) business days after Bering receives each Qualifying Payment, by wire to the account BizformCorp designates in writing.</li>
+    <li>Partial receipts are split as received; no share is due on amounts Bering has not received.</li>
+    <li>Each payment is accompanied by a statement showing the trade, the partner, the counterparty, the gross amount received, any deduction taken and the resulting 30% calculation.</li>
+    <li>Bering provides a consolidated statement of Qualifying Trades and Qualifying Payments within fifteen (15) days after each calendar month end.</li>
+    <li>Amounts unpaid when due accrue interest at 1.5% per month or the maximum rate permitted by law, whichever is lower.</li>
+    <li>Each Party bears its own taxes on its own share. Withholding required by law is deducted and receipted, and the Parties cooperate to reduce it where treaty relief applies.</li>
+    <li>Refunds, chargebacks or clawbacks of a Qualifying Payment are shared 70/30 in the same proportion, and BizformCorp credits or repays its share within thirty (30) days of notice.</li>
+    <li>Audit: on ten (10) business days&rsquo; notice, no more than twice in any 12 months, BizformCorp or its accountant may inspect Bering&rsquo;s records for Qualifying Trades. Understatement of 5% or more means Bering pays the audit cost and the shortfall with interest.</li>
+  </ol>
+
+  <h2>6. Term and Termination</h2>
+  <ol>
+    <li>This MOU begins on the Effective Date and runs for two (2) years, renewing automatically for successive one (1) year terms unless a Party gives written notice of non-renewal at least sixty (60) days before the end of the then-current term.</li>
+    <li>Either Party may terminate for convenience on sixty (60) days&rsquo; written notice, or immediately on the other Party&rsquo;s material breach that is not cured within thirty (30) days of written notice, insolvency, or loss of a licence or approval needed to perform.</li>
+    <li><b>Tail.</b> BizformCorp&rsquo;s 30% share continues on every Qualifying Payment Bering receives on trades secured before termination, and on trades secured within twelve (12) months after termination under an agreement with Shell secured by BizformCorp during the term.</li>
+    <li><b>Survival.</b> Sections 5 (as to payments earned and the tail), 6.3, 7 and 8 survive termination or expiry.</li>
+    <li>On termination each Party returns or destroys the other&rsquo;s Confidential Information on request, except one archival copy kept for legal and audit purposes.</li>
+  </ol>
+
+  <h2>7. Confidentiality, Non-Circumvention and Exclusivity</h2>
+  <ol>
+    <li><b>Confidentiality.</b> Each Party keeps the other&rsquo;s non-public commercial, financial, counterparty and pricing information confidential, uses it only for this arrangement, and protects it for three (3) years after termination. Disclosure required by law or regulator is permitted with prompt notice where lawful.</li>
+    <li><b>Non-circumvention.</b> Neither Party will contact, transact with, or route business around the other&rsquo;s introduced counterparties or partners so as to avoid the obligations of this MOU, during the term and for twelve (12) months afterwards.</li>
+    <li><b>Exclusivity.</b> BizformCorp is Bering&rsquo;s <b>exclusive</b> representative for securing trading agreements with Shell. Bering&rsquo;s pre-existing documented relationships with Shell are carved out and listed in Schedule C.</li>
+    <li>No use of the other Party&rsquo;s name, marks or logos, or of Shell&rsquo;s, in marketing without prior written consent.</li>
+    <li>Either Party may seek injunctive relief for breach of this Section without posting bond, in addition to any other remedy.</li>
+  </ol>
+
+  <h2>8. General Provisions</h2>
+  <ol>
+    <li><b>Effect.</b> Sections 7 and 8 are binding. The remaining Sections express intent and create no obligation to trade, pay or perform until a definitive agreement is signed, except that Section 5 governs the split if the Parties proceed before that agreement is signed.</li>
+    <li><b>Independent parties.</b> No partnership, joint venture, employment or agency is created. Neither Party may bind the other.</li>
+    <li><b>Compliance.</b> Each Party complies with applicable law, including sanctions, export control, anti-money-laundering, and anti-bribery law (including the U.S. Foreign Corrupt Practices Act and the U.K. Bribery Act). Neither Party will make or offer any improper payment to secure a trading agreement, and each represents that no part of BizformCorp&rsquo;s 30% share will be used for that purpose. A breach of this Section permits immediate termination.</li>
+    <li><b>Shell&rsquo;s consent.</b> Neither Party will act contrary to Shell&rsquo;s contractual terms, and each acknowledges Shell is not a party to this MOU and owes no obligation under it.</li>
+    <li><b>No warranty of results.</b> BizformCorp does not guarantee that Shell will enter any agreement or that any trade will occur.</li>
+    <li><b>Limitation of liability.</b> Neither Party is liable for indirect, incidental or consequential loss or lost profits. Each Party&rsquo;s aggregate liability is capped at the amounts paid or payable under Section 5 in the preceding 12 months, except for breach of Section 7, fraud, or a compliance breach under 8.3.</li>
+    <li><b>Assignment.</b> No assignment without the other Party&rsquo;s prior written consent, except to an affiliate or successor in a merger or sale of substantially all assets, on written notice.</li>
+    <li><b>Notices.</b> In writing to the contacts in Section 1, by email with confirmation of receipt, or by courier; deemed given on delivery.</li>
+    <li><b>Governing law and disputes.</b> This MOU is governed by the laws of the State of Texas, without regard to conflict-of-laws rules. The Parties will first negotiate in good faith; unresolved disputes are resolved exclusively in the state or federal courts located in Harris County, Texas, to whose jurisdiction the Parties consent. Each Party waives trial by jury.</li>
+    <li><b>Force majeure.</b> Neither Party is liable for delay caused by events beyond its reasonable control, provided it gives prompt notice and resumes performance when able.</li>
+    <li><b>Amendment, waiver and counterparts.</b> Amendments must be in writing and signed by both Parties. No waiver is implied by delay. This MOU may be signed in counterparts, including electronically.</li>
+    <li><b>Entire understanding.</b> This MOU supersedes prior discussions on this subject and, together with its Schedules, is the Parties&rsquo; complete understanding until a definitive agreement replaces it.</li>
+  </ol>
+
+  <h2>9. Signatures</h2>
+  <p>Agreed and accepted as of the Effective Date.</p>
+  <table class="sig">
+    <thead><tr><th style="width:16%"></th><th>BIZFORMCORP LLC</th><th>BERING GROUP</th></tr></thead>
+    <tbody>
+      <tr><td class="lab">Signature</td><td><div class="sigslot"><span class="typed">Odemero Uwanogho</span></div></td><td><div class="sigslot" id="sig-bering"><span class="ph">Awaiting signature</span></div></td></tr>
+      <tr><td class="lab">Name</td><td class="filledline">Odemero Uwanogho</td><td class="filledline" id="nm-bering">&nbsp;</td></tr>
+      <tr><td class="lab">Title</td><td class="filledline">Director</td><td class="filledline" id="ti-bering">&nbsp;</td></tr>
+      <tr><td class="lab">Date</td><td class="filledline">September 28, 2026</td><td class="filledline" id="dt-bering">&nbsp;</td></tr>
+    </tbody>
+  </table>
+  <div class="badge no-print">&#10004; BizformCorp executed &mdash; Odemero Uwanogho, Director &middot; September 28, 2026</div>
+  <div class="esc" id="ctrl-bering"></div>
+  <div class="audit" id="auditWrap" style="display:none"><h3>Electronic Signature Record</h3><p class="note" style="margin:0 0 6px">Executed electronically under Section 8.11 (counterparts, including electronically). The fingerprint is a SHA-256 hash binding the signatures below to this MOU.</p><table><thead><tr><th>Party</th><th>Signatory / Title</th><th>Email</th><th>Method</th><th>Executed</th></tr></thead><tbody id="auditBody"><tr><td>BIZFORMCORP LLC</td><td>Odemero Uwanogho / Director</td><td>admin@bizformcorp.com</td><td>Pre-filled</td><td>September 28, 2026</td></tr></tbody></table><p style="margin:8px 0 0"><b>Fingerprint (SHA-256):</b> <span class="fp" id="fp">&mdash; (completes when Bering signs)</span></p></div>
+
+  <p style="margin-top:14px"><b>Schedules to be attached</b></p>
+  <ul class="sch">
+    <li><b>Schedule A</b> — Bering&rsquo;s Partners whose trades qualify</li>
+    <li><b>Schedule B</b> — Permitted deductions (not applicable; gross basis under Section 5)</li>
+    <li><b>Schedule C</b> — Bering&rsquo;s pre-existing Shell relationships carved out of Section 7.3</li>
+  </ul>
+
+  <div class="foot">BizformCorp / The Bering Group · Memorandum of Understanding · Confidential</div>
+</div>
+<script>
+(function(){
+var KEY='bizformcorp-bering-mou-esign-v1', st=load();
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+function esc(s){return String(s==null?"":s).replace(/[&<>\"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})}
+function fmt(iso){try{return new Date(iso).toLocaleString()}catch(e){return iso}}
+var host=document.getElementById("ctrl-bering");
+host.innerHTML='<div class="row"><div class="f"><label>Full name</label><input type="text" id="bn" placeholder="Authorised signatory"></div><div class="f"><label>Title</label><input type="text" id="bt" placeholder="e.g., Director"></div></div><div class="row"><div class="f" style="flex:1 1 100%"><label>Email</label><input type="email" id="be" placeholder="name@beringgroup.com"></div></div><div class="tabs"><button type="button" class="on" data-t="type">Type signature</button><button type="button" data-t="draw">Draw signature</button></div><div class="pane on" id="pane-type"><label>Type your name to adopt it as your signature</label><input type="text" id="btyped" placeholder="Type your full name"><div class="tp" id="bprev"></div></div><div class="pane" id="pane-draw"><label>Draw your signature</label><canvas class="draw" id="bcanvas" width="620" height="150"></canvas><button type="button" class="btn ghost" style="color:#16324f;border-color:#b9c6d3;margin-top:6px" id="bclear">Clear</button></div><div class="consent"><input type="checkbox" id="bconsent"><label for="bconsent" style="font-weight:normal;text-transform:none;letter-spacing:0;color:#37424e">I am an authorised signatory of Bering Group and I intend to sign this MOU electronically; my electronic signature is the legal equivalent of my handwritten signature and this MOU may be executed in counterparts, including electronically (Section 8.11).</label></div><button type="button" class="btn pri" id="bsign">Sign for Bering Group</button><div class="mini">Records name, title, email and a timestamp in the signature record below.</div>';
+host.querySelectorAll(".tabs button").forEach(function(b){b.addEventListener("click",function(){var t=b.dataset.t;host.querySelector(".tabs button[data-t=type]").classList.toggle("on",t==="type");host.querySelector(".tabs button[data-t=draw]").classList.toggle("on",t==="draw");document.getElementById("pane-type").classList.toggle("on",t==="type");document.getElementById("pane-draw").classList.toggle("on",t==="draw");});});
+var ti=document.getElementById("btyped"),pv=document.getElementById("bprev");ti.addEventListener("input",function(){pv.textContent=ti.value});
+var c=document.getElementById("bcanvas"),ctx=c.getContext("2d"),drawing=false,dirty=false,last=null;ctx.lineWidth=2.2;ctx.lineCap="round";ctx.lineJoin="round";ctx.strokeStyle="#0a2a52";
+function pos(e){var r=c.getBoundingClientRect();var p=(e.touches&&e.touches[0])||e;return {x:(p.clientX-r.left)*(c.width/r.width),y:(p.clientY-r.top)*(c.height/r.height)}}
+function sd(e){drawing=true;last=pos(e);e.preventDefault()}function mv(e){if(!drawing)return;var p=pos(e);ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p;dirty=true;e.preventDefault()}function en(){drawing=false}
+c.addEventListener("mousedown",sd);c.addEventListener("mousemove",mv);window.addEventListener("mouseup",en);c.addEventListener("touchstart",sd,{passive:false});c.addEventListener("touchmove",mv,{passive:false});c.addEventListener("touchend",en);c.addEventListener("touchcancel",en);
+document.getElementById("bclear").addEventListener("click",function(){ctx.clearRect(0,0,c.width,c.height);dirty=false});
+function val(id){var e=document.getElementById(id);return e?e.value.trim():""}
+document.getElementById("bsign").addEventListener("click",function(){var name=val("bn"),title=val("bt"),email=val("be"),consent=document.getElementById("bconsent").checked;var typeOn=host.querySelector(".tabs button[data-t=type]").classList.contains("on");if(!name){alert("Please enter the signatory name.");return}if(!title){alert("Please enter the title.");return}if(!consent){alert("Please tick the electronic-signature consent box.");return}var method,sig;if(typeOn){var typed=val("btyped")||name;method="Typed";sig={type:"typed",value:typed}}else{if(!dirty){alert("Please draw the signature, or switch to Type.");return}method="Drawn";sig={type:"drawn",value:c.toDataURL("image/png")}}st.bering={name:name,title:title,email:email,method:method,sig:sig,ts:new Date().toISOString()};save();render();fp();});
+function render(){var d=st.bering;var slot=document.getElementById("sig-bering"),nm=document.getElementById("nm-bering"),tiC=document.getElementById("ti-bering"),dt=document.getElementById("dt-bering");if(d){if(d.sig.type==="typed"){slot.innerHTML='<span class="typed"></span>';slot.querySelector(".typed").textContent=d.sig.value;}else{slot.innerHTML='<img alt="signature">';slot.querySelector("img").src=d.sig.value;}nm.textContent=d.name;tiC.textContent=d.title;dt.textContent=fmt(d.ts);host.innerHTML='<div class="badge">&#10004; Signed by '+esc(d.name)+", "+esc(d.title)+" — "+fmt(d.ts)+'</div><div class="mini no-print" style="margin-top:6px"><a href="#" id="bundo">Undo signature</a></div>';var u=document.getElementById("bundo");if(u)u.addEventListener("click",function(e){e.preventDefault();if(confirm("Remove this signature?")){delete st.bering;save();location.reload();}});document.getElementById("statusPill").textContent="2 of 2 parties signed";document.getElementById("downloadBtn").disabled=false;document.getElementById("savedNote").textContent="Both parties have executed. Download / Print the executed copy.";document.getElementById("auditWrap").style.display="block";var ex=document.getElementById("audit-bering");var html="<td>BERING GROUP</td><td>"+esc(d.name)+" / "+esc(d.title)+"</td><td>"+esc(d.email||"—")+"</td><td>"+d.method+"</td><td>"+fmt(d.ts)+"</td>";if(ex){ex.innerHTML=html}else{var tr=document.createElement("tr");tr.id="audit-bering";tr.innerHTML=html;document.getElementById("auditBody").appendChild(tr)}}}
+async function fp(){try{var d=st.bering;if(!d)return;var basis="MOU-BIZFORMCORP-BERING|2026-09-28|BFC:Odemero Uwanogho:Director|BERING:"+d.name+":"+d.title+":"+d.email+":"+d.method+":"+d.ts+":"+(d.sig.type==="typed"?d.sig.value:d.sig.value.length);var buf=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(basis));document.getElementById("fp").textContent=Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,"0")}).join("");}catch(e){document.getElementById("fp").textContent="(unavailable)"}}
+document.getElementById("downloadBtn").addEventListener("click",function(){window.print()});
+document.getElementById("resetBtn").addEventListener("click",function(){if(confirm("Clear Bering signature on this device?")){delete st.bering;save();location.reload();}});
+if(st.bering){render();fp();}
+})();
+</script>
+</body>
+</html>
